@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <title>Delícia Gelada</title>
+
+</head>
+
+<body>
+
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+
+        <div id="barra"></div>
+        
+        <div clas="flex justify-between items-center"></div>
+
+        <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        </ul>
+
+    </nav>
+
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/fundo2.jpg" alt="Logo Dev"
+                class="W-28 h-28 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">
+                Delícia Gelada
+            </h1>
+
+            <span class="text-white font-medium">Rua Berlim 10, Uberlândia - MG
+            </span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+
+                <span class="text-white font-medium">Aberto</span>
+
+            </div>
+
+        </div>
+    </header>
+
+    <h2 class="text-2x1 md:text-3x1 font-bold text-center mt-9 mb-6">
+        Conheça o nosso cardápio
+    </h2>
+
+    <div id="menu">
+        <main class="grid gri-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7x1 px-2 mb-16">
+
+            <div class="flex gap-2">
+                <img src="./assets/baunilha.jpg" alt="Sorvete Clássico de Baunilha"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Sorvete Clássico de Baunilha</p>
+                    <p class="text-sm">Delicioso sorvete de baunilha cremoso, feito com ingredientes naturais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 15.25</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Sorvete Clássico de Baunilha"
+                            data-price="15.25">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div><br>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/sundae.jpg" alt="Sundae de Chocolate e Morango"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Sundae de Chocolate e Morango</p>
+                    <p class="text-sm">Sorvete de chocolate e morango com cobertura de calda quente, chantilly e pedaços de brownie crocante.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 16.70</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Sundae de Chocolate e Morango"
+                            data-price="16.70">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div><br>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/milkshake.jpg" alt="Milkshake de Nutella"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Milkshake de Nutella</p>
+                    <p class="text-sm">Mistura de sorvete de creme e Nutella, batido até ficar bem cremoso e servido com chantilly e pedaços de biscoito.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 20.00</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Milkshake de Nutella"
+                            data-price="20.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/acai.jpg" alt="Açaí na Tigela"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Açaí na Tigela</p>
+                    <p class="text-sm">Açaí gelado batido com banana e granola crocante, servido com mel e frutas frescas.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 26.00</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Açaí na Tigela"
+                            data-price="26.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div><br>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/manga.jpg" alt="Sorvete Vegano de Manga"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Sorvete Vegano de Manga</p>
+                    <p class="text-sm">Sorvete sem leite, feito com manga natural, ideal para quem segue uma dieta vegana ou sem lactose.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 29.25</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Sorvete Vegano de Manga"
+                            data-price="29.25">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div><br>
+
+                </div>
+
+            </div>
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/maracuja.jpg" alt="Crocante de Limão e Maracujá"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Crocante de Limão e Maracujá</p>
+                    <p class="text-sm">Sorvete refrescante de limão com maracujá, coberto com uma camada de calda cítrica e pedaços crocantes de biscoito.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p calss="font-bold text-lg">R$ 22.00</p>
+                        <button class="bg-gray-400 px-5 rounded add-to-cart-btn" data-name="Crocante de Limão e Maracujá"
+                            data-price="22.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    </div>
+
+    </main>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="my-carrinho">
+
+        <div class="bg-white p-4 rounded-md min-w-[90%] md:min-w[400px]">
+            <h2 class="text-center font-bold text-2x1 mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega</p><br>
+            <input type="text" placeholder="Digite seu endereço completo.." id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+
+            <p class="text-red-900 hidden" id="address-warn">Campo obrigatório</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Avançar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="w-full bg-red-900 py-3 fixed bottom-0 z-40 flex itens-center justify-center">
+        <button class="flexx items-center gap-2 text-white font-bold" id="fim-btn">
+            (<span id="cart-count">0</span>)
+            Finalizar meu pedido
+            <i class="fa fa-cart-plus text-lg text-black"></i>
+        </button>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+
+
+</body>
+
+</html>
