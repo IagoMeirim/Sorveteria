@@ -1,4 +1,4 @@
- Cafeteria do Igão 
+Sorveteria do Igão 
 
  Sobre
 
