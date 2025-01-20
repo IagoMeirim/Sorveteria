@@ -1,4 +1,4 @@
-Sorveteria do Igão 
+Sorveteria do Igão 🍦
 
  Sobre:
 
